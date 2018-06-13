@@ -1,0 +1,88 @@
+#bodyWrapper {
+	width: 100%;
+	background-image: url("../images/bg.png");
+	background-size: cover;
+	
+}
+
+header {
+	background-image: url("../images/header.png");
+	font-family: 'Gloria Hallelujah';
+	color: gold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	padding: 5%;
+	font-size: 100px;
+	text-align: center;
+}
+
+
+#gifForm {
+	margin-left: 37%;
+	padding-top: 10px;
+}
+
+#gifInput {
+	padding-top: 10px;
+	width: 300px;
+}
+
+label {
+	font-family: 'Gloria Hallelujah';
+	color: gold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	font-size: 30px;
+}
+
+#addGif {
+	color: black;
+	
+	
+}
+
+/*artist buttons at the top*/
+.artistButtons {
+	margin-right: 2px;
+	margin-top: 20px;  
+	border-radius: 8px;
+	font-size: 40px;
+	background-color: gold;
+	color: black;
+	border: 2px solid black;
+
+}
+
+#pageButtons {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.artistButtons:hover {
+	border-radius: 8px;
+	background-color: black;
+	color: white;
+	border: 2px solid gold;
+}
+
+
+img {
+	margin-left: 5%;
+	height: 200px;
+	width: 330px;
+	padding: 5px;
+	border-radius:15px;
+}
+
+
+
+.gifWrapper {
+	padding: 1%;
+	display: inline-block;
+}
+
+.gifWrapper p {
+	margin-left: 6%;
+	font-size: 20px;
+	font-weight: bold;
+	color: gold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
