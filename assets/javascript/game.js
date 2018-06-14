@@ -1,16 +1,15 @@
 $(document).ready(function(){ 
 
-	//Global
+	//global
 	var topics = ['David Bowie', 'Freddy Mercury', 'Notorious BIG', 'The Beatles', 'Prince', 'Talking Heads', 'Jimi Hendrix', 'Nirvana'];
 	var searchWord = [];
 	
-	//AJAX
+	//ajax
 	function displayGifs() {
 		//api key and url for AJAX
 		var apiKey = "Dc2ZY7P8Y8vLFFr81QzNEMGjQvc5O0pM";
 		var giphyURL = "https://api.giphy.com/v1/gifs/search?q=" + searchWord + "&limit=10&rating=pg&api_key=" + apiKey;
 		
-
 		$.ajax({url: giphyURL, method: 'GET'}).done(function(response) {
 			//clear gifs from page
 			$('#gifs').empty();
@@ -23,7 +22,7 @@ $(document).ready(function(){
 				var gifImage = $('<img>');
 				var gifWrapper = $('<div/>');
 				
-				//add class and attributes to be used in the on click event
+				//add class and attr to be used in the on click event
 				gifWrapper.addClass('gifWrapper');
 				gifImage.addClass('gifs');
 				gifImage.attr('src', image)
@@ -36,8 +35,7 @@ $(document).ready(function(){
 				$('#gifs').append(gifWrapper);
 				$('#gifWrap' + [i]).append(rating);
 				$('#gifWrap' + [i]).append(gifImage);
-				
-				
+							
 			}
 			
 			//on click to change gif from still to animate and back
@@ -58,9 +56,7 @@ $(document).ready(function(){
 			
 	};
 
-	
 	//functions
-
 
 	//creates buttons and gives them a class
 	function buttons() {
@@ -69,7 +65,7 @@ $(document).ready(function(){
 		//repopulate buttons in topics array
 		for(var i = 0; i < topics.length; i++) {
 			var button = $('<button/>');
-			//concatinates multiple words with + using .join()
+			//links multiple words with + using .join()
 			button.data('query', topics[i].split(' ').join('+'))
 			button.addClass('artistButtons');
 			button.data('name', topics[i]);

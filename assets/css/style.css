@@ -1,12 +1,6 @@
-#bodyWrapper {
-	width: 100%;
-	background-image: url("../images/bg.png");
-	background-size: cover;
-	
-}
-
 header {
 	background-image: url("../images/header.png");
+	background-size: cover;
 	font-family: 'Gloria Hallelujah';
 	color: gold;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -15,6 +9,11 @@ header {
 	text-align: center;
 }
 
+#wrapper {
+	width: 100%;
+	background-image: url("../images/bg.png");
+	background-size: cover;
+}
 
 #gifForm {
 	margin-left: 37%;
@@ -39,7 +38,6 @@ label {
 	
 }
 
-/*artist buttons at the top*/
 .artistButtons {
 	margin-right: 2px;
 	margin-top: 20px;  
@@ -71,8 +69,6 @@ img {
 	padding: 5px;
 	border-radius:15px;
 }
-
-
 
 .gifWrapper {
 	padding: 1%;
